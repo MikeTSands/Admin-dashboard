@@ -10,6 +10,8 @@ body, html {
     grid-template-rows: 1fr 5fr;
 }
 
+/* CSS for sidebar and child elements */
+
 .sidebar {
     background-color: lightskyblue;
     grid-row: 1 / 3;
@@ -43,10 +45,66 @@ body, html {
     font-size: 25px;
 }
 
+/* CSS for header and child elements */
+
 .header {
     background-color: white;
     grid-column: 2 / 5;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
 }
+
+.search-bar, .user-info {
+    margin-left: 20px;
+}
+
+.search-bar, .user {
+    margin-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-img {
+    height: 30px;
+    width: 30px;
+}
+
+.search {
+    width: 500px;
+    height: 25px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.notification-alert {
+    height: 25px;
+    width: 25px;
+}
+
+.profile-picture > img{
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* CSS for main page and child elements*/
 
 .main {
     background-color: grey;
