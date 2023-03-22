@@ -185,12 +185,26 @@ button {
 
 .headline {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     height: 20vh;
     width: 25vw;
     background-color: white;
     justify-content: center;
     align-items: flex-start;
     margin-top: 15px;
+    padding: 5px;
+}
+
+.social-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.social-buttons > img {
+    height: 30px;
+    width: 30px;
 }
 
 .help-requests {
